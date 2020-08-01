@@ -55,3 +55,4 @@ Metrics Server安装清单随GitHub版本一起上传。
     - --requestheader-group-headers=X-Remote-Group
     - --requestheader-username-headers=X-Remote-User
     - --enable-aggregator-routing=true 
+
