@@ -45,14 +45,15 @@ Metrics Server安装清单随GitHub版本一起上传。
      --kubelet-insecure-tls-不要验证Kubelets所提供的服务证书的CA。 仅用于测试目的。
 
 另外需要在/etc/kubernetes/manifests/kube-apiserver配置添加
-    - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
-    - --requestheader-client-ca-file=/etc/kubernetes/pki/front-proxy-ca.crt
-    - --proxy-client-cert-file=/etc/kubernetes/pki/front-proxy-client.crt
-    - --proxy-client-key-file=/etc/kubernetes/pki/front-proxy-client.key
-    - --requestheader-allowed-names=front-proxy-client
-    - --requestheader-client-ca-file=/etc/kubernetes/pki/front-proxy-ca.crt
-    - --requestheader-extra-headers-prefix=X-Remote-Extra-
-    - --requestheader-group-headers=X-Remote-Group
-    - --requestheader-username-headers=X-Remote-User
-    - --enable-aggregator-routing=true 
+
+     - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+     - --requestheader-client-ca-file=/etc/kubernetes/pki/front-proxy-ca.crt
+     - --proxy-client-cert-file=/etc/kubernetes/pki/front-proxy-client.crt
+     - --proxy-client-key-file=/etc/kubernetes/pki/front-proxy-client.key
+     - --requestheader-allowed-names=front-proxy-client
+     - --requestheader-client-ca-file=/etc/kubernetes/pki/front-proxy-ca.crt
+     - --requestheader-extra-headers-prefix=X-Remote-Extra-
+     - --requestheader-group-headers=X-Remote-Group
+     - --requestheader-username-headers=X-Remote-User
+     - --enable-aggregator-routing=true 
 
